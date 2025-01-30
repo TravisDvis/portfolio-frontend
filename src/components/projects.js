@@ -4,7 +4,7 @@ function Projects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('https://portfolio-backend-bxyu.onrender.com') 
+    fetch('https://portfolio-backend-bxyu.onrender.com/api/projects/') 
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.error(error));
